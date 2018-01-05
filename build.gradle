@@ -19,9 +19,19 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://www.jitpack.io" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+ext{
+    calligraphyVersion='2.3.0'
+    geniusVersion = '2.0.1'
+    supportLibraryVersion='26.1.0'
+    junitVersion = '4.12'
+    dbflowVersion = '4.0.4'
+    gsonVersion = '2.8.0'
+    volleyVersion = '1.0.19'
 }
